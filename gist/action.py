@@ -4,7 +4,8 @@
 import requests
 from gist.endpoints import endpoints
 
-def gist_post(public = True, files, description = None, ):
+#def gist_post(public = True, files, description = None, ):
+def gist_post(files, public = True, description = None):
     if public:
         try:
             url = endpoints['gist_post']['url']
